@@ -1,1 +1,1 @@
-<img src= "./project1-1/Diagram.jpg">
+![Diagram](https://user-images.githubusercontent.com/107227057/181157579-587d460a-7960-4b18-8efa-ec604d9671e0.jpg)
