@@ -1,18 +1,25 @@
-console.log("Project 1");
-
-//select:
-const sky = document.getElementsByClassName('sky');
-
 //EventListeners:
 document.addEventListener('DOMContentLoaded', () => {
-    const bird = documentquerySelector('.bird');
-    const gameDisplay = document.querySelector('game-container');
-    const ground = document.querySelector('.ground');
+    const bird = document.querySelector('.bird')
+    const gameDisplay = document.querySelector('.game-container')
+    const ground = document.querySelector('.ground')
 
-    let birdLeft = 220; // adds space between bird and the sky from left side
-    let birdBottom = 100; // adds space between bird and bottom of sky.
+    let birdLeft = 220
+    let birdBottom = 100
+    let gravity = 2
 
     function startGame() {
+        birdBottom -= gravity
         bird.style.bottom = birdBottom + 'px'
+        bird.style.left = birdLeft + 'px'
     }
+    let timerId = setInterval(startGame, 20)
+
+    function jump() {
+        birdBottom += 50
+        bird.style.bottom = birdBottom + 'px'
+        console.log(birdBottom)
+    }
+    document.addEventListener('keyup', jump)
+    
 })
