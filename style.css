@@ -11,10 +11,10 @@ body {
 
 .border-left {
     width: 80px;
-    height: 790px;
+    height: 790px; /* height of game-container and top border*/
     position: absolute;
     background-color: white;
-    z-index: +2;
+    z-index: +1;
 }
 
 .border-right {
@@ -23,7 +23,7 @@ body {
     position: absolute;
     background-color: white;
     z-index: +2;
-    left: 580px;
+    left: 580px; /* sum of border-left's width and game-container's width */
 }
 
 .border-top {
@@ -48,7 +48,7 @@ body {
     height: 150px;
     position: absolute;
     top: 580px;
-    z-index: +1;
+    z-index: +1; /* makes ground appear closer to us */
 }
 
 .bird {
