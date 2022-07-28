@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function jump() {
-        if (birdBottom < 500) birdBottom += 50
+        if (birdBottom < 500) birdBottom += 45
         bird.style.bottom = birdBottom + 'px'
         console.log(birdBottom)
     }
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             if (
                 obstacleLeft > 200 && obstacleLeft < 280 && birdLeft === 220 && // if obstacle is not in the last 200px of its travel.. AND middle of the grid almost (< 280px).. AND birdLeft is at position 220px.. then we have gameOver
-                (birdBottom < obstacleBottom + 280 || birdBottom > obstacleBottom + gap - 75)|| 
+                (birdBottom < obstacleBottom + 280 || birdBottom > obstacleBottom + gap - 67.5)|| 
                 //birdbottom < obstaclebottom --> for game over when bird hits bottom obstacle.
                 //birdbottom > obstaclebottom + gap --> for game over when bird hits top obstacle.
                 birdBottom === 0
