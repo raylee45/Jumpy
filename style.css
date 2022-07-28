@@ -1,7 +1,38 @@
+body {
+    display: flex; /* helps display the divs side-by-side next to ea. other and not stacked on top of each other */
+}
+
 .game-container {
     width: 500px;
-    height: 730px;
+    height: 600px;
     position: absolute;
+    left: 80px; /* makes space for the border-left */
+}
+
+.border-left {
+    width: 80px;
+    height: 790px;
+    position: absolute;
+    background-color: white;
+    z-index: +2;
+}
+
+.border-right {
+    width: 80px;
+    height: 790px;
+    position: absolute;
+    background-color: white;
+    z-index: +2;
+    left: 580px;
+}
+
+.border-top {
+    width: 660px; /* = sum of border-left, border-right, and sky's width */
+    height: 50px;
+    position:absolute;
+    background-color: white;
+    z-index: +2;
+    top: -50px; /* b/c we want it to be above the sky*/
 }
 
 .sky {
@@ -17,6 +48,7 @@
     height: 150px;
     position: absolute;
     top: 580px;
+    z-index: +1;
 }
 
 .bird {
@@ -27,14 +59,14 @@
 }
 
 .obstacle {
-    background-image: url('fist-project1.png');
+    background-image: url('flappybird-pipe.png');
     width: 60px;
     height: 300px;
     position: absolute;
 }
 
 .topObstacle {
-    background-image: url('fist-project1.png');
+    background-image: url('flappybird-pipe.png');
     transform: rotate(180deg);
     width: 60px;
     height: 300px;

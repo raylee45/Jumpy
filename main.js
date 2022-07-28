@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let birdBottom = 100
     let gravity = 2
     let isGameOver = false
-    let gap = 250
+    let gap = 430
 
     function startGame() {
         birdBottom -= gravity
@@ -50,14 +50,18 @@ document.addEventListener('DOMContentLoaded', () => {
         function moveObstacle() {
             obstacleLeft -= 2
             obstacle.style.left = obstacleLeft + 'px'
+            topObstacle.style.left = obstacleLeft + 'px'
 
             if (obstacle === -60) {
                 clearInterval(timerId)
                 gameDisplay.removeChild(obstacle)
+                gameDisplay.removeChild(topObstacle)
             }
             if (
-                obstacleLeft > 200 && obstacleLeft < 280 && birdLeft === 220 &&
-                birdBottom < obstacleBottom + 153 ||
+                obstacleLeft > 200 && obstacleLeft < 280 && birdLeft === 220 && // if obstacle is not in the last 200px of its travel.. AND middle of the grid almost (< 280px).. AND birdLeft is at position 220px.. then we have gameOver
+                (birdBottom < obstacleBottom + 280 || birdBottom > obstacleBottom + gap - 75)|| 
+                //birdbottom < obstaclebottom --> for game over when bird hits bottom obstacle.
+                //birdbottom > obstaclebottom + gap --> for game over when bird hits top obstacle.
                 birdBottom === 0
                 ) {
                 gameOver()
@@ -71,6 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function gameOver() {
         clearInterval(gameTimerId)
+        console.log('game over')
         isGameOver = true
         document.removeEventListener('keyup', control)
 
