@@ -4,7 +4,7 @@ body {
 
 .game-container {
     width: 500px;
-    height: 600px;
+    height: 730px;
     position: absolute;
     left: 80px; /* makes space for the border-left */
 }
@@ -14,7 +14,7 @@ body {
     height: 790px; /* height of game-container and top border*/
     position: absolute;
     background-color: white;
-    z-index: +1;
+    z-index: +2;
 }
 
 .border-right {
@@ -36,14 +36,14 @@ body {
 }
 
 .sky {
-    background-color: lightblue;
+    background-image: url('Pokemon-sky.jpeg');
     width: 500px;
     height: 580px;
-    position:absolute
+    position: absolute;
   }
 
 .ground {
-    background-color: brown;
+    background-image: url('bottom-background.png');
     width: 100%;
     height: 150px;
     position: absolute;
@@ -52,10 +52,12 @@ body {
 }
 
 .bird {
-    background-color: yellow;
+    background-image: url('flappy-bird.png');
     position:absolute;
     width: 60px;
     height: 45px;
+    left: 220px;
+    bottom: 100px;
 }
 
 .obstacle {
@@ -69,6 +71,27 @@ body {
     background-image: url('flappybird-pipe.png');
     transform: rotate(180deg);
     width: 60px;
-    height: 300px;
+    height: 200px;
+    top: 10px;
     position: absolute;
+}
+
+#score {
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    color: black;
+    font-weight: 100;
+    z-index: 100;
+}
+
+.score-container {
+    position: absolute;
+    width: 492px;
+    height: 30px;
+    left: 8px;
+    background-color: grey;
+    z-index: 99;
 }
