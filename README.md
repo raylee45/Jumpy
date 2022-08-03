@@ -20,11 +20,5 @@ Code snippets:
  - I was mostly proud of how I was able to code the obstacles to move. Seeing the pipes move left was one of the most satisfying moments of the project.
  - I was also very proud when I got the collision detection to be more precise. This is because it took me quite some trial and error to get this closer to satisfaction. 
 
-
-short explanation of technologies,  MVP(minimal Value Product aka what you needed to pass), requirements, 2-3 proud code snippets,  and wireframe
-7:59
-you will walk us through how your game works when you present
-you can also add instructions explaining how the user can play
-
 Wireframe:
 ![Diagram](Wireframe.jpg)
