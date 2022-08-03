@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const gameDisplay = document.querySelector('.game-container')
     const ground = document.querySelector('.ground')
     const scoreValue = document.querySelector('#score')
+    const scoreBoard = document.querySelector('.score-container')
 
     let birdLeft = 220
     let birdBottom = 100
@@ -25,6 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let newScore = Number(scoreValue.textContent) + 10
         scoreValue.textContent = newScore
         e.preventDefault()
+        if (newScore === 200) scoreBoard.textContent = "Winner!"
     }
 
     function jump() {
@@ -83,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         let timerId = setInterval(moveObstacle, 20)
         if (!isGameOver) setTimeout(generateObstacle, 3000)
-        if (isGameOver) alert ("You died!")
+        if (isGameOver) scoreBoard.textContent = "Loser!"
     }
     generateObstacle()
 
