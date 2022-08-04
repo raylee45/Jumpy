@@ -1,6 +1,6 @@
 This game I created is basically a Flappy Bird game, but I have added a point system where you can keep record of how far stay alive for.
 
-The requirements needed for this project to be successful: - have either an AI/obstacle system or PVP characteristic.
+The requirements needed for this project to be successful:
 - A design to show winner/loser.
 - Display the game in the browser.
 - Include separate HTML / CSS / JavaScript files
