@@ -27,4 +27,4 @@ The requirements needed for this project to be successful:
 This is a wireframe I built my game around while brainstorming the game-making process.
 ![Diagram](Wireframe.jpg)
 
-Finished!!
+Finished!
