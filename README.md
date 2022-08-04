@@ -16,9 +16,5 @@ How the game works:
 1. Use spacebar to make your character jump as it fights against gravity and avoid touching the pipes and ground.
 2. Get to highest score possible, and once a certain score is reached you will be announced a winner.
 
-Code snippets:
- - I was mostly proud of how I was able to code the obstacles to move. Seeing the pipes move left was one of the most satisfying moments of the project.
- - I was also very proud when I got the collision detection to be more precise. This is because it took me quite some trial and error to get this closer to satisfaction. 
-
 Wireframe:
 ![Diagram](Wireframe.jpg)
