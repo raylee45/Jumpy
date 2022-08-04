@@ -17,7 +17,7 @@ The requirements needed for this project to be successful:
 ## How the game works:
 1. Use spacebar to make your character jump as it fights against gravity and avoid touching the pipes and ground.
 2. There will be top and bottom pipes/obstacles that move towards the bird horizontally-left. As the bird, you will have to try your best to stay in between the gap of the 2 pipes/obstacles AND avoid touching the ground to avoid making it game over.
-3. Each time the bird jumps, the player will receive 10 points. Get to highest score possible, and once a certain score is reached you will be announced a winner.
+3. Each time the bird jumps, the player will receive 10 points. Get to highest score possible and/or once a certain score is reached you will be announced a winner (for class demonstration purposes).
 
 ## Techniques used:
 - For the game's framework, I stuck with utilized only JavaScript instead of Canvas. 
