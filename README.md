@@ -13,8 +13,7 @@ The requirements needed for this project to be successful:
 - Use Javascript for DOM manipulation
 - Deploy your game online, where the rest of the world 
     can access it
-- Use semantic markup for HTML and CSS (adhere to best 
-    practices)
+- Use semantic markup for HTML and CSS
 
 ## How the game works:
 1. Use spacebar to make your character jump as it fights against gravity and avoid touching the pipes and ground.
