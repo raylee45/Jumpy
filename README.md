@@ -1,6 +1,8 @@
 # Jumpy
 This game I created is basically a Flappy Bird game, but I have added a point system where you can keep record of how far stay alive for. It's a game where you play as a bird and try to stay alive by avoiding touching pipes that move toward you, all while also not touching the ground. Otherwise, it will be game over.
 
+To get the game visit: https://raylee45.github.io/Jumpy/
+
 ## Requirements
 The requirements needed for this project to be successful:
 - A design to show winner/loser.
