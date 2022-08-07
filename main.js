@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const ground = document.querySelector('.ground')
     const scoreValue = document.querySelector('#score')
     const scoreBoard = document.querySelector('.score-container')
+    const restart = document.querySelector(`#reset`);
 
     let birdLeft = 220
     let birdBottom = 100
@@ -19,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     let gameTimerId = setInterval(startGame, 20)
 
-    function control(e) {
+    function control(e) { // makes jump only happen on spacebar (keyCode 32)
         if (e.keyCode === 32) {
             jump()
         }
@@ -35,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log(birdBottom)
     }
     document.addEventListener('keyup', control)
-    document.addEventListener('keydown', (e) => {
+    document.addEventListener('keydown', (e) => { //prevents google chrome page from moving down the page with spacebar command.
         if (e.keyCode === 32) {
             e.preventDefault()
         }
@@ -93,6 +94,11 @@ document.addEventListener('DOMContentLoaded', () => {
         clearInterval(gameTimerId)
         console.log('game over')
         isGameOver = true
+        restart.innerHTML = `Play Again`;
         document.removeEventListener('keyup', control)
     }
+
+    restart.addEventListener("click", () => {
+        window.location.reload()
+    })
 })
