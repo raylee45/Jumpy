@@ -28,4 +28,7 @@ The requirements needed for this project to be successful:
 This is a wireframe I built my game around while brainstorming the game-making process.
 ![Diagram](Wireframe.jpg)
 
+## App Screenshot:
+![project1pic](https://user-images.githubusercontent.com/107227057/195244904-95cafb08-2ca5-42d2-958a-e68066c6feeb.png)
+
 Finished!
